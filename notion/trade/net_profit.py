@@ -14,7 +14,7 @@ def net_profit(prop, profit):
         },
         
         properties={
-            "이익": {"number": trade_profit},
+            "시세차익": {"number": trade_profit},
             "배당이익": {"number": dividend_profit},
             "마지막 업데이트": rich_text(today_and_time_is())
         }
