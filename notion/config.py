@@ -5,6 +5,9 @@ import os
 # 노션에 연결중인 현재가 DB의 토큰값.
 NOTION_TOKEN = os.environ["NOTION_TOKEN"]
 
+# 자산 보유현황 DB
+NOTION_INFO_DB_ID = os.environ["NOTION_INFO_DB_ID"]
+
 # 통합 거래내역 DB
 NOTION_TRADE_DB_ID = os.environ["NOTION_TRADE_DB_ID"]
 
