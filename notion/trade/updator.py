@@ -12,7 +12,7 @@ def trade_updator(results):
         }
 
         if raw_prop["profit"] and not raw_prop["profit_saved"]: 
-            net_profit("domestic_stock", raw_prop["profit"])
+            net_profit("trade", raw_prop["profit"])
             properties["순수익 반영"] = {
                 "checkbox": True
             }
