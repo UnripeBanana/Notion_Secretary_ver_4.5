@@ -1,3 +1,6 @@
+from notion.rich_text import rich_text
+from utils.day_log import today_and_time_is
+
 def info_updator(page, properties):
 
     updated_properties = {
