@@ -25,5 +25,6 @@ jobs:
       - run: python3 trade_main.py
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_INFO_DB_ID: ${{ secrets.NOTION_INFO_DB_ID }}
           NOTION_TRADE_DB_ID: ${{ secrets.NOTION_TRADE_DB_ID }}
           NOTION_NET_PROFIT_DB_ID: ${{ secrets.NOTION_NET_PROFIT_DB_ID }}
