@@ -9,5 +9,5 @@ for page in get_all_pages(NOTION_INFO_DB_ID):
     if not ticker:
         continue
 
-    properties = asset_reader(ticker)
-    asset_updator(page, properties)
+    properties = info_reader(ticker)
+    info_updator(page, properties)
