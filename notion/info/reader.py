@@ -143,7 +143,7 @@ def gold_data_reader(code):
         "cr": float(price_df["rate"][0])      # 등락률(%)
     }
 
-def asset_reader(ticker):
+def info_reader(ticker):
 
     if ticker in ["M04020000"]:
         data = gold_data_reader(ticker)
