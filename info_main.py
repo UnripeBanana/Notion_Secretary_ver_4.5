@@ -1,4 +1,4 @@
-from notion.config import 
+from notion.config import NOTION_INFO_DB_ID
 from notion.info.reader import info_reader
 from notion.info.updator import info_updator
 from notion.get_all_pages import get_all_pages
