@@ -1,4 +1,4 @@
-from notion.callout.ID_list import callout_ID_list
+from notion.callout.asset_page_ID_list import asset_page_ID_list
 from notion.client import notion
 
 def chart_image(page):
@@ -9,7 +9,7 @@ def chart_image(page):
         "5년 차트": "1825days"
     }
 
-    callout_data = callout_ID_list(page)
+    callout_data = asset_page_ID_list(page)
 
     for callout in callout_data:
         callout_id = callout["callout_ID"]
