@@ -1,6 +1,6 @@
 from notion.client import notion
 
-def callout_ID_list(page):
+def asset_page_ID_list(page):
 
     page_info = notion.pages.retrieve(page_id=page["id"])
     column_list = notion.blocks.children.list(block_id=page["id"])
