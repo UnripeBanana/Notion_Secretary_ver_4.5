@@ -3,6 +3,7 @@ from notion.info.reader import info_reader
 from notion.info.updator import info_updator
 from notion.get_all_pages import get_all_pages
 from notion.callout.asset_page_chart_image import asset_page_chart_image
+from notion.callout.index_performer import index_performer
 
 for page in get_all_pages(NOTION_INFO_DB_ID):
 
@@ -14,3 +15,4 @@ for page in get_all_pages(NOTION_INFO_DB_ID):
     info_updator(page, properties)
 
     asset_page_chart_image(page)
+    index_performer()
