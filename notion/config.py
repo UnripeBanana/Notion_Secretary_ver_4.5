@@ -11,5 +11,8 @@ NOTION_INFO_DB_ID = os.environ["NOTION_INFO_DB_ID"]
 # 통합 거래내역 DB
 NOTION_TRADE_DB_ID = os.environ["NOTION_TRADE_DB_ID"]
 
+# 배당금 DB
+NOTION_DIVIDEND_DB_ID = os.environ["NOTION_DIVIDEND_DB_ID"]
+
 # 순수익 DB 링크
 NOTION_NET_PROFIT_DB_ID = os.environ["NOTION_NET_PROFIT_DB_ID"]
