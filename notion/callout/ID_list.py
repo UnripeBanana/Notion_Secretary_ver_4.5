@@ -1,3 +1,5 @@
+from notion.client import notion
+
 def callout_ID_list(page):
 
     page_info = notion.pages.retrieve(page_id=page["id"])
