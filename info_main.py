@@ -2,7 +2,7 @@ from notion.config import NOTION_INFO_DB_ID
 from notion.info.reader import info_reader
 from notion.info.updator import info_updator
 from notion.get_all_pages import get_all_pages
-from notion.callout.chart_image import chart_image
+from notion.callout.asset_page_chart_image import asset_page_chart_image
 
 for page in get_all_pages(NOTION_INFO_DB_ID):
 
@@ -13,4 +13,4 @@ for page in get_all_pages(NOTION_INFO_DB_ID):
     properties = info_reader(ticker)
     info_updator(page, properties)
 
-    chart_image(page)
+    asset_page_chart_image(page)
