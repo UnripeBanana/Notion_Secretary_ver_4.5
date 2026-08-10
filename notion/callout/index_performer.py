@@ -16,19 +16,19 @@ def index_performer():
     
     targets = [
         {
-            "call_out_ID": "0f76e5aee083829397d581bb68dc9a93",
+            "call_out_ID": "a086e5aee08382cba0fc01fb0c3cc4e1",
             "title": "KOSPI",
             "df": index_data_reader(5, "KOSPI"),
             "chart_url": "https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/market_index/KOSPI_1825days_chart.png"
         },
         {
-            "call_out_ID": "a526e5aee0838342b3b081d421b59416",
+            "call_out_ID": "8be6e5aee083836680c401a038d0b91e",
             "title": "달러/원 환율",
             "df": price_data_reader(5, "USD-KRW"),
             "chart_url": "https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/price/USD-KRW_1825days_chart.png"
         },
         {
-            "call_out_ID": "3f66e5aee083824499ac014d399b9eb5",
+            "call_out_ID": "7076e5aee08382a69a1901781f0d29f5",
             "title": "국제금 / 달러 인덱스",
             "df": price_data_reader(5, "International_Gold"),
             "chart_url": "https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/price/International_Gold_X_Dolar_Index_1825days_chart.png"
