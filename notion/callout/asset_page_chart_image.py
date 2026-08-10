@@ -1,7 +1,7 @@
 from notion.callout.asset_page_ID_list import asset_page_ID_list
 from notion.client import notion
 
-def chart_image(page):
+def asset_page_chart_image(page):
     # 1. 기간별 텍스트 매핑 테이블 사전 정의
     PERIOD_MAP = {
         "3개월 차트": "90days",
