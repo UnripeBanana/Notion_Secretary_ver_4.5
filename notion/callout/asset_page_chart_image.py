@@ -1,5 +1,6 @@
 from notion.callout.asset_page_ID_list import asset_page_ID_list
 from notion.client import notion
+import time
 
 def asset_page_chart_image(page):
     # 1. 기간별 텍스트 매핑 테이블 사전 정의
@@ -47,8 +48,8 @@ def asset_page_chart_image(page):
             notion.blocks.delete(block_id=block["id"])
 
         # 5. 차트 URL 생성
-        chart_url = f"https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/{field}/{name}_{p_text}_chart.png"
-        candle_chart_url = f"https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/{field}/{name}_{p_text}_day_candle_chart.png"
+        chart_url = f"https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/{field}/{name}_{p_text}_chart.png?v={timestamp}"
+        candle_chart_url = f"https://raw.githubusercontent.com/UnripeBanana/Image_Secretary_ver_4.5/main/data/image/{field}/{name}_{p_text}_day_candle_chart.png?v={timestamp}"
 
         # 6. 추가할 노션 블록 데이터 동적 생성
         new_children = [
