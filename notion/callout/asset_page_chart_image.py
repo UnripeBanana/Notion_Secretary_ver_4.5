@@ -9,7 +9,7 @@ def asset_page_chart_image(page):
         "1년 차트": "365days",
         "5년 차트": "1825days"
     }
-
+    timestamp = int(time.time())
     callout_data = asset_page_ID_list(page)
 
     for callout in callout_data:
