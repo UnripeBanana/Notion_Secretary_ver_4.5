@@ -3,6 +3,7 @@ from collector.data_reader.price_data_reader import price_data_reader
 from datetime import datetime, timedelta
 from notion.client import notion
 from notion.callout.index_updator import index_updator
+import time
 
 def index_performer():
     #-----------------------------------------------------------------------------------
@@ -10,6 +11,7 @@ def index_performer():
     #-----------------------------------------------------------------------------------
     today = datetime.now()
     today_str = datetime.now().strftime("%Y-%m-%d")
+    timestamp = int(time.time())
     
     yesterday = today - timedelta(days=1)
     yesterday_str = yesterday.strftime("%Y-%m-%d")
