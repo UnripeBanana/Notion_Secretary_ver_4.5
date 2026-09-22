@@ -4,6 +4,8 @@ def trade_reader(page):
 
 	props = page["properties"]
     print(props)
+
+
 	relation_page_id = props["종목"]["relation"][0]["id"]
 	relation_page = notion.pages.retrieve(relation_page_id)
 	
