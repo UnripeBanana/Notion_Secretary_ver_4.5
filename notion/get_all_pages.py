@@ -25,9 +25,9 @@ def get_all_pages(database_id):
 
     return pages
 
-
-from notion.client import notion
 """
+from notion.client import notion
+
 
 def get_all_pages(data_source_id):
     pages = []
