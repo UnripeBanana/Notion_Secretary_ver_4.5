@@ -1,4 +1,4 @@
-notion-client==2.2.1
+notion-client==3.1.0
 pandas==2.3.0
 requests==2.32.3
 
